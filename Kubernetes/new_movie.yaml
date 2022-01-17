@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: new-movie
+  labels:
+    app: new-movie
+spec:
+  selector:
+    matchLabels:
+      app: new-movie
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: new-movie
+    spec:
+      containers:
+      - name: new-movie
+        image: namuk2004/new_movie
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 5001
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: new-movie-svc
+spec:
+  sessionAffinity: ClientIP
+  selector:
+    app: new-movie
+  ports:
+  - protocol: "TCP"
+    port: 5001
+    targetPort: 5001
+    nodePort: 31234
+  type: NodePort
