@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset='utf-8'>
+  <title>Deven Rathod -Free Movie Server</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}"/>
+ <script src="{{url_for('static', filename='js/script.js')}}"></script>
+
+    
+</head>
+
+<div class="c2">
+         <marquee><p>Show movie information </p></marquee>
+</div>
+<body>
+<header>
+  <div class="nav">
+  <hr/>
+<nav>
+
+  <ul>
+<!-- <li><a href="index.html">Home</a></li> -->
+  <li><a href="/">Home</a></li>
+  <li><a href="https://api.whatsapp.com/send?phone=+911234567890&text=please%20add%20the%20movie">Request movie</a></li>
+  <li><a href="https://api.whatsapp.com/send?phone=+911234567890&text=want%20to%20contact%20you">Contact</a></li>
+<!--<li><a href="about.html">About</a></li>  -->
+  <li><a href="/about" class="test-link">about</a>
+<!--<li><a href="upload.html">Upload Movies</a></li>-->
+  <li><a href="/upload">Upload Movies</a></li>
+
+   </ul>
+
+</nav>
+<hr/>
+</div>
+  <h1 class="headh1">Welcome To Free Movie Server</h1>
+     <h2 class="headh1">click on Show Button to see all movies</h2>
+     
+  <button class="nbtn" onclick="filterSelection('all')">Show</button>
+  
+  </header>
+
+
+<!-- movie upload code  -->
+<div class="cards">
+  <a href="/movie_info/{{dic[0]}}" class="card-link"><div class="row">   
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/1.jpg')}}" alt="Mountains" style="width:10%" hidden>
+      <h2>{{dic[0]['Movie title']}}</h2>
+	  
+    </div>
+    </a>
+  </div>
+  <a href="/movie_info/{{dic[1]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/2.jpg')}}" alt="Lights" style="width:10%" hidden>
+      <h2>{{dic[1]['Movie title']}}</h2>
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[2]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/3.jpg')}}" alt="Nature" style="width:10%" hidden>
+      <h2>{{dic[2]['Movie title']}}</h2>    
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[3]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/4.jpg')}}" alt="Car" style="width:10%" hidden>
+      <h2>{{dic[3]['Movie title']}}</h2>
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[4]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/5.jpg')}}" alt="Car" style="width:10%" hidden>
+      <h2>{{dic[4]['Movie title']}}</h2>
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[5]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/6.jpg')}}" alt="Car" style="width:10%" hidden>
+      <h2>{{dic[5]['Movie title']}}</h2>
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[6]}}" class="card-link"><div class="row">
+  <div class="column movie">
+
+
+
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/7.jpg')}}" alt="People" style="width:10%" hidden>
+      <h2>{{dic[6]['Movie title']}}</h2>      
+    </div>
+    
+    
+  <a href="/movie_info/{{dic[7]}}" class="card-link"><div class="row">
+  </div>
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/8.jpg')}}" alt="People" style="width:10%" hidden>
+      <h2>{{dic[7]['Movie title']}}</h2>
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[8]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/9.jpg')}}" alt="People" style="width:10%" hidden>
+      <h2>{{dic[8]['Movie title']}}</h2>
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[9]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/10.jpg')}}" alt="People" style="width:10%" hidden>
+      <h2>{{dic[9]['Movie title']}}</h2>
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[10]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/10.jpg')}}" alt="People" style="width:10%" hidden>
+      <h2>{{dic[10]['Movie title']}}</h2>
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[11]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/11.jpg')}}" alt="People" style="width:10%" hidden>
+      <h2>{{dic[11]['Movie title']}}</h2>
+    </div>
+  </div>
+  <a href="/movie_info/{{dic[12]}}" class="card-link"><div class="row">
+  <div class="column movie">
+    <div class="content" style="background-color:black">
+      <img src="{{url_for('static', filename='img/12.jpg')}}" alt="People" style="width:10%" hidden>
+      <h2>{{dic[12]['Movie title']}}</h2>
+    </div>
+  </div>
+
+<!-- END GRID -->
+</div>
+
+
+</body>
+</html>
