@@ -31,7 +31,6 @@ class movies(Resource):
 
 @ns_Movie.route('/Movies/<string:jenre>')
 class movies_jenre(Resource):
-  # �뇡�슢�삏占쎈굡 占쎌젟癰귨옙 鈺곌퀬�돳
   def get(self, jenre):
     if not jenre in movie_info.keys():
       abort(404, description=f"jenre {jenre} doesn't exist")
@@ -42,8 +41,7 @@ class movies_jenre(Resource):
         'data': data
     }
 
-
-  # 占쎄퉱嚥≪뮇�뒲 �뇡�슢�삏占쎈굡 占쎄문占쎄쉐
+  
   def post(self, jenre):
     if jenre in movie_info.keys():
       abort(409, description=f"jenre {jenre} already exists")
@@ -52,7 +50,7 @@ class movies_jenre(Resource):
     return Response(status=201)
 
 
-  # �뇡�슢�삏占쎈굡 占쎌젟癰귨옙 占쎄텣占쎌젫
+  
   def delete(self, jenre):
     if not jenre in movie_info.keys():
       abort(404, description=f"jenre {jenre} doesn't exists")
@@ -61,7 +59,7 @@ class movies_jenre(Resource):
     return Response(status=200)
 
 
-  # �뇡�슢�삏占쎈굡 占쎌뵠�뵳占� 癰귨옙野껓옙
+  
   def put(self, jenre):
     # todo
     return Response(status=200)
