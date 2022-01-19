@@ -64,7 +64,7 @@ kubectl apply –f main_app.yaml
 flask_restx를 이용하여 영화 정보 생성, 삭제, 변경 등 Rest API 기반으로 구성된 앱   
 
 
-<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/New%20movie%20%ED%8F%B4%EB%8D%94.png" width="80px" height="80px" title="px(픽셀) 크기 설정" alt="영화정보 제공 폴더"></img><br/>
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/New%20movie%20%ED%8F%B4%EB%8D%94.png" width="100px" height="90px" title="px(픽셀) 크기 설정" alt="영화정보 제공 폴더"></img><br/>
 
 
 
