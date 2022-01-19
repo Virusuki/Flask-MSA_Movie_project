@@ -84,11 +84,12 @@ class movies_jenre_model(Resource):
 ```
 
 [ 영화정보등록 CRUD.png ]
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%EB%93%B1%EB%A1%9D%20CRUD.png" width="550px" height="700px" title="px(픽셀) 크기 설정" alt="영화정보 등록 CRUD"></img><br/>
 
 #### 영화정보 제공 컨테이너 Dockerfile, build 및 이미지 생성
 [영화정보 제공 컨테이너 도커파일 그림 ]
-
-<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%EB%93%B1%EB%A1%9D%20CRUD.png" width="550px" height="700px" title="px(픽셀) 크기 설정" alt="영화정보 등록 CRUD"></img><br/>
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%20%EC%A0%9C%EA%B3%B5%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC.png
+" width="380px" height="280px" title="px(픽셀) 크기 설정" alt="영화정보 제공 도커파일 CRUD"></img><br/>
 
 
 ```
