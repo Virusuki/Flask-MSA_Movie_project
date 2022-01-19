@@ -19,9 +19,7 @@
 
 ### UI 컨테이너 구성
 - main_app_source 폴더
-[메인 앱 소스 폴더 그림]
-https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/main%20%ED%8F%B4%EB%8D%94.png
-<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/main%20%ED%8F%B4%EB%8D%94.png" width="100px" height="100px" title="px(픽셀) 크기 설정" alt="메인 소스 폴더"></img><br/>
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/main%20%ED%8F%B4%EB%8D%94.png" width="100px" height="100px" title="px(픽셀) 크기 설정" alt="메인 소스 폴더"></img><br/>   
 
 - 그림과 같이 영화 정보 제공 웹 사이트는 flask 웹 프레임워크를 활용
 
