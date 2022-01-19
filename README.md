@@ -40,9 +40,8 @@
 ```
 
 #### Movie UI 도커 컨테이너 Dockerfile, build 및 이미지 생성
-[Movie UI 도커컨테이너 도커파일 생성.png 그림]
 
-<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/Movie%20UI%20%EB%8F%84%EC%BB%A4%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC%20%EC%83%9D%EC%84%B1.png" width="550px" height="300px" title="px(픽셀) 크기 설정" alt="Movie UI 도커 컨테이너 Dockerfile"></img><br/>
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/Movie%20UI%20%EB%8F%84%EC%BB%A4%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC%20%EC%83%9D%EC%84%B1.png" width="380px" height="280px" title="px(픽셀) 크기 설정" alt="Movie UI 도커 컨테이너 Dockerfile"></img><br/>
 
 ```
 Docker build –t namuk2004/main_app .
