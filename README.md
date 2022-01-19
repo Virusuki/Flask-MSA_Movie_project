@@ -1,5 +1,9 @@
 # Flask-MSA_Movie_project
 
+- MSA 및 Kubernetes 배포 기반 영화 정보 제공 웹 사이트 youtube 동영상 링크
+https://www.youtube.com/watch?v=cZxfBEjU6u8
+
+
 ### MSA 및 Kubernetes 배포 기반 영화 정보 제공 웹 사이트 
 
 -	UI 컨테이너: UI의 틀을 구성하는 컨테이너
