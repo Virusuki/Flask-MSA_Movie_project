@@ -41,7 +41,7 @@
 
 #### Movie UI 도커 컨테이너 Dockerfile, build 및 이미지 생성
 
-<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/Movie%20UI%20%EB%8F%84%EC%BB%A4%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC%20%EC%83%9D%EC%84%B1.png" width="320px" height="280px" title="px(픽셀) 크기 설정" alt="Movie UI 도커 컨테이너 Dockerfile"></img><br/>
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/Movie%20UI%20%EB%8F%84%EC%BB%A4%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC%20%EC%83%9D%EC%84%B1.png" width="300px" height="260px" title="px(픽셀) 크기 설정" alt="Movie UI 도커 컨테이너 Dockerfile"></img><br/>
 
 ```
 Docker build –t namuk2004/main_app .
@@ -51,7 +51,7 @@ Docker push namuk2004/main_app
 #### Movie UI 컨테이너 이미지를 활용한 쿠버네티스 기반 배포 
 [Movie UI 컨테이너 쿠버네티스 배포 그림]
 
-<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/Movie%20UI%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EC%BF%A0%EB%B2%84yaml.png" width="580px" height="300px" title="px(픽셀) 크기 설정" alt="Movie UI 도커 컨테이너 쿠버네티스 yaml"></img><br/>
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/Movie%20UI%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EC%BF%A0%EB%B2%84yaml.png" width="620px" height="320px" title="px(픽셀) 크기 설정" alt="Movie UI 도커 컨테이너 쿠버네티스 yaml"></img><br/>
 
 ```
 Kubernetes 배포 command
@@ -88,7 +88,7 @@ class movies_jenre_model(Resource):
 
 #### 영화정보 제공 컨테이너 Dockerfile, build 및 이미지 생성
 
-<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%20%EC%A0%9C%EA%B3%B5%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC.png" width="320px" height="280px" title="px(픽셀) 크기 설정" alt="영화정보 제공 도커파일 CRUD"></img><br/>
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%20%EC%A0%9C%EA%B3%B5%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC.png" width="300px" height="260px" title="px(픽셀) 크기 설정" alt="영화정보 제공 도커파일 CRUD"></img><br/>
 
 
 ```
@@ -98,7 +98,7 @@ Docker push namuk2004/new_movie
 
 #### 영화정보 제공 컨테이너 이미지를 활용한 쿠버네티스 기반 배포
 
-<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%EB%93%B1%EB%A1%9D%20%EC%BF%A0%EB%B2%84%20yaml.png" width="580px" height="300px" title="px(픽셀) 크기 설정" alt="영화정보 제공 폴더"></img><br/>
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%EB%93%B1%EB%A1%9D%20%EC%BF%A0%EB%B2%84%20yaml.png" width="620px" height="320px" title="px(픽셀) 크기 설정" alt="영화정보 제공 폴더"></img><br/>
 
 
 ```
