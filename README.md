@@ -7,9 +7,9 @@
 -	영화 카드를 클릭하면 영화 관련 상세 정보를 나타남
     - 제목, 설명 등으로 이루어진 간소한 페이지로 구성
 
-- Flask 기반 영화 정보 제공 웹 사이트 구축
-[메인그림]
-<img src="https://github.com/Virusuki/Kubernetes/blob/main/k8s-develop/Pod-Container%20Design/files/img/Pod_service_action.PNG" width="550px" height="300px" title="px(픽셀) 크기 설정" alt="Pod service action"></img><br/>
+- Flask 기반 영화 정보 제공 웹 사이트 구축   
+
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EB%A9%94%EC%9D%B8%ED%99%94%EB%A9%B4.png" width="550px" height="300px" title="px(픽셀) 크기 설정" alt="메인 "></img><br/>
 
 1.	Home - 메인화면 
 2.	about - 소개
@@ -20,6 +20,9 @@
 ### UI 컨테이너 구성
 - main_app_source 폴더
 [메인 앱 소스 폴더 그림]
+https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/main%20%ED%8F%B4%EB%8D%94.png
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/main%20%ED%8F%B4%EB%8D%94.png" width="550px" height="300px" title="px(픽셀) 크기 설정" alt="메인 소스 폴더"></img><br/>
+
 - 그림과 같이 영화 정보 제공 웹 사이트는 flask 웹 프레임워크를 활용
 
 - templates 폴더
@@ -39,6 +42,8 @@
 #### Movie UI 도커 컨테이너 Dockerfile, build 및 이미지 생성
 [Movie UI 도커컨테이너 도커파일 생성.png 그림]
 
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/Movie%20UI%20%EB%8F%84%EC%BB%A4%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EB%8F%84%EC%BB%A4%ED%8C%8C%EC%9D%BC%20%EC%83%9D%EC%84%B1.png" width="550px" height="300px" title="px(픽셀) 크기 설정" alt="Movie UI 도커 컨테이너 Dockerfile"></img><br/>
+
 ```
 Docker build –t namuk2004/main_app .
 Docker push namuk2004/main_app
@@ -46,6 +51,8 @@ Docker push namuk2004/main_app
 
 #### Movie UI 컨테이너 이미지를 활용한 쿠버네티스 기반 배포 
 [Movie UI 컨테이너 쿠버네티스 배포 그림]
+
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/Movie%20UI%20%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88%20%EC%BF%A0%EB%B2%84yaml.png" width="550px" height="300px" title="px(픽셀) 크기 설정" alt="Movie UI 도커 컨테이너 쿠버네티스 yaml"></img><br/>
 
 ```
 Kubernetes 배포 command
@@ -56,6 +63,8 @@ kubectl apply –f main_app.yaml
 ### 영화정보 제공 컨테이너 구성 
 flask_restx를 이용하여 영화 정보 생성, 삭제, 변경 등 Rest API 기반으로 구성된 앱
 [New movie 폴더.png 그림]
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/New%20movie%20%ED%8F%B4%EB%8D%94.png" width="550px" height="300px" title="px(픽셀) 크기 설정" alt="영화정보 제공 폴더"></img><br/>
+
 ```
 @ns_Movie.route('/Movies')  # 영화
 @ns_Movie.route('/Movies/<string:jenre>')   # 영화의 장르 종류
@@ -77,6 +86,9 @@ class movies_jenre_model(Resource):
 #### 영화정보 제공 컨테이너 Dockerfile, build 및 이미지 생성
 [영화정보 제공 컨테이너 도커파일 그림 ]
 
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%EB%93%B1%EB%A1%9D%20CRUD.png" width="550px" height="700px" title="px(픽셀) 크기 설정" alt="영화정보 등록 CRUD"></img><br/>
+
+
 ```
 Docker build –t namuk2004/new_movie .
 Docker push namuk2004/new_movie
@@ -85,6 +97,9 @@ Docker push namuk2004/new_movie
 #### 영화정보 제공 컨테이너 이미지를 활용한 쿠버네티스 기반 배포
 [영화정보등록 쿠버 yaml.png 그림]
 
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%EB%93%B1%EB%A1%9D%20%EC%BF%A0%EB%B2%84%20yaml.png" width="550px" height="300px" title="px(픽셀) 크기 설정" alt="영화정보 제공 폴더"></img><br/>
+
+
 ```
 Kubernetes 배포 command
 kubectl apply –f new_movie.yaml
@@ -92,6 +107,8 @@ kubectl apply –f new_movie.yaml
 
 - 등록된 영화 정보 관련 특정 영화 상세 페이지 view
 [등록된 영화정보의 특정 영화 상세페이지 그림]
+<img src="https://github.com/Virusuki/Flask-MSA_Movie_project/blob/main/Readme_img/%EB%93%B1%EB%A1%9D%EB%90%9C%20%EC%98%81%ED%99%94%EC%A0%95%EB%B3%B4%EC%9D%98%20%ED%8A%B9%EC%A0%95%20%EC%98%81%ED%99%94%20%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80.png" width="550px" height="300px" title="px(픽셀) 크기 설정" alt="영화정보 상세 페이지"></img><br/>
+
 
 
 
