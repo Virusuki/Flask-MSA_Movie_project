@@ -39,35 +39,59 @@
 #### Movie UI 도커 컨테이너 Dockerfile, build 및 이미지 생성
 [Movie UI 도커컨테이너 도커파일 생성.png 그림]
 
-
+```
 Docker build –t namuk2004/main_app .
 Docker push namuk2004/main_app
+```
 
 #### Movie UI 컨테이너 이미지를 활용한 쿠버네티스 기반 배포 
 [Movie UI 컨테이너 쿠버네티스 배포 그림]
 
+```
 Kubernetes 배포 command
 kubectl apply –f main_app.yaml
-
+```
 
 
 ### 영화정보 제공 컨테이너 구성 
 flask_restx를 이용하여 영화 정보 생성, 삭제, 변경 등 Rest API 기반으로 구성된 앱
 [New movie 폴더.png 그림]
-
+```
 @ns_Movie.route('/Movies')  # 영화
 @ns_Movie.route('/Movies/<string:jenre>')   # 영화의 장르 종류
 class movies_jenre(Resource): 
--	Get
--	Post
--	Delete
--	Put
+  - Get
+  - Post
+  - Delete
+  - Put
 @ns_Movie.route('/Movies/<string:jenre>/<int:jenre_id>') # 장르에 따른 영화
 class movies_jenre_model(Resource):
--	Get
--	Post
--	Delete
--	Put
+  - Get
+  - Post
+  - Delete
+  - Put
+```
+
+[ 영화정보등록 CRUD.png ]
+
+#### 영화정보 제공 컨테이너 Dockerfile, build 및 이미지 생성
+[영화정보 제공 컨테이너 도커파일 그림 ]
+
+```
+Docker build –t namuk2004/new_movie .
+Docker push namuk2004/new_movie
+```
+
+#### 영화정보 제공 컨테이너 이미지를 활용한 쿠버네티스 기반 배포
+[영화정보등록 쿠버 yaml.png 그림]
+
+```
+Kubernetes 배포 command
+kubectl apply –f new_movie.yaml
+```
+
+- 등록된 영화 정보 관련 특정 영화 상세 페이지 view
+[등록된 영화정보의 특정 영화 상세페이지 그림]
 
 
 
