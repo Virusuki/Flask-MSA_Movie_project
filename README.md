@@ -4,7 +4,7 @@
 https://www.youtube.com/watch?v=cZxfBEjU6u8
 
 
-### MSA 및 Kubernetes 배포 기반 영화 정보 제공 웹 사이트 
+### MSA 및 Kubernetes 배포 기반 영화 정보 제공 웹 사이트 (최신)
 
 -	UI 컨테이너: UI의 틀을 구성하는 컨테이너
 -	영화 정보 컨테이너: 영화 정보를 제공하는 컨테이너
