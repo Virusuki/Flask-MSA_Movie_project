@@ -45,7 +45,7 @@ class movies_jenre(Resource):
         'data': data
     }
 
-
+  # test!!jenkins
   # 占쎄퉱嚥≪뮇�뒲 �뇡�슢�삏占쎈굡 占쎄문占쎄쉐
   def post(self, jenre):
     if jenre in movie_info.keys():
